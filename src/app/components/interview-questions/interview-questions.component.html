@@ -1,0 +1,17 @@
+<div class="container container-flex">
+    <main role="main" style="
+    overflow: scroll;width: 100% !important;">
+        
+        <div style="text-align: center;">
+            <h1>Angular Interview Questions</h1>
+        </div>
+        
+        <article *ngFor="let data of interviewQues;let i = index" style="padding: 20px;display: grid;background: #d2eafc;border-radius: 7px;margin:10px">
+            <h2  class="btn btn-info"  >{{(i+1)+". "+data.question}}</h2>
+            <span   style="padding: 10px;border: 1px dashed;">
+              {{data.answer}}
+            </span>
+        </article>
+    </main>
+</div>
+
